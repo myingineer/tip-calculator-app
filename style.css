@@ -219,7 +219,7 @@ label {
 
 
 
-@media (width <= 450px) {
+@media only screen and (max-width: 500px) {
     .main-container {
         display: flex;
         flex-direction: column;
