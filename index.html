@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <img class="logo" src="./images/logo.svg" alt="">
+
+    <div class="main-container">
+
+        <div class="left-container">
+
+            <form class="first-input">
+                <label for="bill-amount">Bill</label>
+                <div class="first-input-container">
+                    <img src="./images/icon-dollar.svg" alt="dollar-icon">
+                    <input type="text" placeholder="    0" class="js-bill-input">
+                </div>
+            </form>
+
+            <form class="second-input">
+                <label for="tip-percent">Select Tip %</label>
+                <div class="first-button-row">
+                    <button type="button" class="js-five-percent-btn">5%</button>
+                    <button type="button" class="js-ten-percent-btn">10%</button>
+                    <button type="button" class="js-fifteen-percent-btn">15%</button>
+                </div>
+                <div class="second-button-row">
+                    <button type="button" class="js-twenty-five-percent-btn">25%</button>
+                    <button type="button" class="js-fifty-percent-btn">50%</button>
+                    <input type="text" placeholder="Custom" class="js-custom-tip-input">
+                </div>
+            </form>
+
+            <form class="third-input">
+                <div class="labels-for-third-container">
+                    <label for="number-of-persons">Number of People</label>
+                    <label for="error" class="error js-error">Can't be zero</label>
+                </div>
+                <div class="third-input-container js-third-input">
+                    <img src="./images/icon-person.svg" alt="person-logo">
+                    <input type="text" placeholder="    0" class="js-number-of-persons">
+                </div>
+            </form>
+        </div>
+
+        <div class="right-container">
+
+            <div class="tip-amount-container">
+                <p>Tip Amount <br><span class="different-color">/ person</span></p>
+                <h1>$<span class="js-tip-amount">0.00</span></h1>
+            </div>
+
+
+            <div class="total-amount-container">
+                <p>Total <br><span class="different-color">/ person</span></p>
+                <h1>$<span class="js-total-amount">0.00</span></h1>
+            </div>
+
+
+            <button type="button" class="reset-btn js-reset-btn">RESET</button>
+        </div>
+
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

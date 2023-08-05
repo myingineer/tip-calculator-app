@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(185, 41%, 84%);
+}
+
+.logo {
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 45px;
+}
+
+.main-container {
+    /* border: 1px solid black; */
+    width: 70%;
+    margin: auto;
+    height: 65vh;
+    margin-top: 25px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.left-container {
+    /* border: 1px solid blue; */
+    width: 55%;
+    float: left;
+    height: 100%;
+}
+
+.first-input {
+    /* border: 1px solid black; */
+    width: 85%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+label {
+    font-family: 'Space Mono', monospace;
+    color: hsl(186, 14%, 43%);
+    font-weight: 700;
+}
+
+::-webkit-input-placeholder {
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
+    color: hsl(186, 14%, 43%);
+    font-weight: 600;
+}
+
+.first-input-container,
+ .third-input-container {
+    /* border: 1px solid salmon; */
+    width: 99.8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 38px;
+    margin-top: 5px;
+    background-color: hsl(189, 41%, 97%);
+    border-radius: 4px;
+}
+
+.first-input-container img,
+ .third-input-container img {
+    padding-left: 8px;
+}
+
+.first-input-container input,
+ .third-input-container input {
+    width: 100px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.first-input-container input:focus,
+.second-button-row input:focus,
+.third-input-container input:focus {
+    outline: none;
+    font-size: 1.3em;
+    border: 2px solid hsl(172, 67%, 45%);
+}
+
+.second-input {
+    /* border: 1px solid salmon; */
+    width: 85%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.first-button-row,
+ .second-button-row {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    align-items: center;
+}
+
+.first-button-row button,
+ .second-button-row button {
+    width: 30%;
+    height: 40px;
+    border: none;
+    font-family: 'Space Mono', monospace;
+    font-size: 1.4em;
+    color: white;
+    font-weight: 700;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 4px;
+}
+
+.first-button-row button:focus,
+ .second-button-row button:focus {
+    cursor: pointer;
+    background-color: hsl(172, 67%, 45%);
+}
+
+.second-button-row input {
+    width: 30%;
+    height: 35px;
+    background-color: hsl(189, 41%, 97%);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.third-input {
+    width: 85%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.labels-for-third-container {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.error {
+    color: rgb(255, 0, 0);
+    display: none;
+}
+
+.error2 {
+    border: 2px solid red;
+}
+
+.right-container {
+    border: 1px solid saddlebrown;
+    width: 40%;
+    float: right;
+    height: 85%;
+    margin-top: 30.7px;
+    margin-right: 20px;
+    border-radius: 20px;
+    background-color: hsl(183, 100%, 15%);
+}
+
+.tip-amount-container,
+ .total-amount-container {
+    /* border: 1px solid saddlebrown; */
+    width: 80%;
+    margin: auto;
+    height: 45px;
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tip-amount-container p,
+.total-amount-container p {
+    color: white;
+    font-family: 'Space Mono', monospace;
+}
+
+.tip-amount-container .different-color,
+.total-amount-container .different-color {
+    color: hsl(185, 41%, 84%);
+}
+
+.tip-amount-container h1,
+.total-amount-container h1 {
+    font-size: 2.4em;
+    font-family: 'Space Mono', monospace;
+    color: hsl(172, 67%, 45%);
+}
+
+.right-container .reset-btn {
+    display: block;
+    margin: auto;
+    width: 80%;
+    height: 45px;
+    margin-top: 95px;
+    border: none;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 17px;
+    background-color: hsl(185, 41%, 84%);
+    border-radius: 4px;
+    opacity: 10%;
+}
+
+.right-container .reset-btn:hover {
+    background-color: hsl(172, 67%, 45%);
+    cursor: pointer;
+    opacity: 100%;
+}
+
+
+
+/* For Mobile Devices */
+
+
+
+@media (width <= 500px) {
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 115vh;
+    }
+
+    .left-container {
+        width: 100%;
+    }
+
+    .right-container {
+        width: 90%;
+        margin: auto;
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+
+    .first-input-container,
+    .third-input-container {
+        height: 50px;
+    }
+
+}
