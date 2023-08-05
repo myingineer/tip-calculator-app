@@ -219,7 +219,7 @@ label {
 
 
 
-@media (width <= 500px) {
+@media (width <= 450px) {
     .main-container {
         display: flex;
         flex-direction: column;
