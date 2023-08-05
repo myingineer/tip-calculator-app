@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/myingineer/tip-calculator-app.git)
+- Solution URL: [https://github.com/myingineer/tip-calculator-app.git]
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
@@ -62,8 +62,6 @@ I didn't use the 'onblur', but I learnt about it.
 
 
 ## Author
-
-- Website - [Add your name here](https://www.your-site.com)
 - Frontend Mentor - [@myingineer](https://www.frontendmentor.io/profile/myingineer)
 - Twitter - [@myingineer](https://www.twitter.com/myingineer)
 - Github - [@myingineer] (https://www.github.com/myingineer)
